@@ -2,9 +2,51 @@
 <html lang="pt-br">
 <head>
 	<meta charset="UTF-8">
-	<title>Document</title>
+	<title>Uso do JQuery</title>
+
+<script type="text/javascript" src="../js/jquery.js"></script>	
+
+<script type="text/javascript">
+/*Para usar a biblioteca de JQuery, é necessario usar um caracter especial para fazer
+a chamada:($) ou JQuery*/
+	$(document).ready(function(){
+		$('#principal').append('<p>Texto Novo</p>');
+		$('#primeiro').click(function(){
+			$('div').append('<h2> Estou aqui dentro</h2>');
+
+		});
+});	
+
+
+</script>
+
+
+
 </head>
 <body>
-	
+
+<header>
+	<h1>Página com JQuery</h1>
+</header>
+
+<main>
+
+	<section id="principal">
+		<div>
+		<button id="primeiro">primeiro</button><br>
+			<div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil fugiat eius eum omnis porro, delectus sed sequi odit natus ratione repellendus dicta nostrum rerum accusantium, hic quibusdam eaque dolore modi.</div>
+			<div>Totam id nam repudiandae iusto! Asperiores nesciunt amet, nulla, facilis ullam delectus in tempora repudiandae ut quasi, similique omnis quam impedit autem consequatur rerum mollitia excepturi quaerat dicta perferendis dolore?</div>
+			<div>Quam saepe sit voluptatibus aut, quis quae corporis atque, iure assumenda optio. Praesentium vero ex accusantium suscipit deserunt, cumque nam tempore possimus sed, blanditiis, aspernatur repellat. Voluptatem laborum velit, ea!</div>
+		</div>
+		<div>
+			<div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem eligendi, at dolorem fugit cumque itaque! Quia ea molestias placeat amet tempora, sapiente atque, nisi, temporibus dolorum quidem nam maxime asperiores!</div>
+			<div>Expedita doloribus sunt accusamus nostrum optio obcaecati qui! Sequi voluptates dolore maxime facilis fugiat, maiores cumque explicabo facere odio dolorum aliquid omnis molestiae laborum inventore numquam. Labore cum, earum numquam.</div>
+			<div>Distinctio alias magnam ipsam, omnis quos expedita. Rerum vitae, dolore, repudiandae, laudantium debitis officia officiis assumenda esse nam non id vel explicabo reiciendis saepe minus. Quo sint ad eius veniam!</div>
+		</div>
+	</section>
+
+
+
+</main>
 </body>
 </html>
